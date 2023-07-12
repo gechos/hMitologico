@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hotel Mitológico</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+      
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet"> 
+</head>
+
+
+<body>
+    <!-- Barra superior -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>info@hmitologico.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+034 918 500 001</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin barra superior-->
+
+
+    <!-- Barra navegacion -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-4" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">Hotel </span>Mitológico</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="entorno.html" class="nav-item nav-link">Entorno</a>
+                        <a href="habitaciones.html" class="nav-item nav-link">Habitaciones</a>
+                        <a href="servicios.html" class="nav-item nav-link">Servicios</a>
+                        <a href="interes.html" class="nav-item nav-link">Qué ver?</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Paginas</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="interes.html" class="dropdown-item">Qué ver...</a>
+                                <a href="blog.html" class="dropdown-item">Blog..</a>
+                            </div>
+                        </div> -->
+                        <a href="contact.html" class="nav-item nav-link">Contacta</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- fin Barra navegacion-->
+    
+    <!-- Carrusel video navia -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video style="min-width: 100%; min-height: 100%" playsinline autoplay  loop>
+                        <source class="h-100" src="videos/Puerto de Vega Asturias.mp4" type="video/mp4" />
+                      </video>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="text-white text-uppercase mb-md-3">Navia</h1>
+                            <h3 class="display-3 text-white mb-md-4">Descubrela ...</h3>
+                            <a href="habitaciones.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Conocenos...</a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <!--  -->
+        </div>
+    </div>
+    <!-- Fin Carrusel -->
+
+     <!-- Inicio de reserva -->
+     <div class="container-fluid booking mt-5">
+        <div class="container pb-5">
+            <div class="bg-light shadow" style="padding: 10px;">
+                <div class="row align-items-center" style="min-height: 60px;">
+                    <div class="col-md-10 ">
+                        <form id="reserva1" name="formulario1" action="reservas.html" method="get">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <label for="habitacion">Tipo de Habitación</label>
+                                        <select class="custom-select px-4" id="habitacion" name="habitacion"
+                                            style="height: 47px;">
+                                            <option value="">Habitacion</option>
+                                            <option value="1">Habitación estándar-vista montaña</option>
+                                            <option value="2">Habitación estándar-vista mar</option>
+                                            <option value="3">Habitación doble-vista montaña</option>
+                                            <option value="4">Habitación estándar-vista mar</option>
+                                            <option value="5">Suite con terraza</option>
+                                            <option value="6">Suite estándar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <label for="fechaEntrada">Fecha de Entrada</label>
+                                        <div class="date" data-target-input="nearest">
+                                            <input type="date" id="fechaEntrada" name="fechaEntrada"
+                                                class="form-control p-4 datetimepicker-input" placeholder="Entrada"
+                                                data-target="#date1" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <label for="fechaSalida">Fecha de Salida</label>
+                                        <div class="date" data-target-input="nearest">
+                                            <input type="date" id="fechaSalida" name="fechaSalida"
+                                                class="form-control p-4 datetimepicker-input" placeholder="Salida"
+                                                data-target="#date2" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <label for="personas">Personas</label>
+                                        <div class="number" data-target-input="nearest">
+                                            <input type="number" id="personas" name="personas"
+                                                class="form-control p-4 datetimepicker-input" placeholder="Personas"
+                                                data-target="#personas" value="2" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-2 mt-4">
+                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;"
+                            href="/">RESERVA</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin reserva -->
+    
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute bg-dark h-100" src="img/hotel/hotel.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Conocenos</h6>
+                        <h1 class="mb-3">VISITA ASTURIAS</h1>
+                        <p>¡Habitaciones disponibles!
+                            Disfruta de este remanso de paz a un paso de Gijón y con a poca distacia de la playa.</p>
+                        <h1 class="mb-3">Exterior</h1>
+                            <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/hotel/hotel-1.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/hotel/hotel-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <h1 class="mb-3">Piscina</h1>
+                            <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/hotel/hotel-3.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/hotel/hotel-4.jpg" alt="">
+                            </div>
+                        </div>
+                        <h1 class="mb-3">Terraza</h1>
+                            <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/hotel/hotel-5.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/hotel/hotel-6.jpg" alt="">
+                            </div>
+                        </div>
+                        <h1 class="mb-3">Interior</h1>
+                            <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/hotel/hotel-7.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/hotel/hotel-8.jpg" alt="">
+                            </div>
+                        </div>
+                        <h1 class="mb-3">Alrededores</h1>
+                            <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/hotel/hotel-9.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/hotel/hotel-10.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration py-5">
+            <div class="row align-items-center ml-auto">
+                <div class="col-lg-7 mb-5 .mt-lg-4">
+                    <div class="mb-4">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Vuelve con nosotros...</h6>
+                        <h1 class="text-white"><span class="text-primary">Asturias</span> Paraiso Natural</h1>
+                    </div>
+                    <p class="text-white">Relájate en una hamaca con un buen libro, pasea por nuestros jardines, coge
+                        una fruta del árbol y saboréala o simplemente escucha el sonido de los pájaros. El entorno de la
+                        Hotel Mistologico invita a desconectar del día a día y soñar.</p>
+                     </div>   <div class="col-lg-2 mb-5 .mt-lg-4">
+                        <ul class="list-inline text-white m-0">
+                        <li ><i class="fa fa-check text-primary mr-3"></i>Descanso.</li>
+                        <li ><i class="fa fa-check text-primary mr-3"></i>Naturaleza.</li>
+                        <li ><i class="fa fa-check text-primary mr-3"></i>Deporte.</li>
+                        <li ><i class="fa fa-check text-primary mr-3"></i>Cultura.</li>
+                    </ul>
+                    </div>
+                
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Registration End -->
+
+    <!-- Pie -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-6 mb-5">
+                <div class="row">
+                <img class="fa mr-4" src="img/logo.png" width="100" height="100" alt="Logo Hotel Mitológico Footer">
+                <h1 class="text-primary mt-3"><span class="text-white">Hotel </span>Mitológico</h1>
+                </div>
+                <div class="row">
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Calle, Asturias, España</p>
+                    <p class="text-body px-3">|</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+034 918 500 001</p>
+                    <p class="text-body px-3">|</p>
+                    <p><i class="fa fa-envelope"></i>info@hmitologico.com</p>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="row">
+                    <h6 class="text-white text-uppercase mt-4 mb-3 mr-4" style="letter-spacing: 12px;">Siguenos...</h6>
+                    <div class="d-flex justify-content-start ml-auto">
+                        <a class="btn btn-outline-primary btn-square mr-2 mt-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2 mt-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2 mt-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary btn-square mt-2" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <h6 class="text-white text-uppercase mt-4" style="letter-spacing: 5px;"> Suscríbete a nuestra newsletter</h6>
+                <div class="w-100">
+                    <div class="input-group"> 
+                        <input type="text" class="form-control border-light mr-2" placeholder="Tu Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3">Inscribete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="aviso-legal.php">Aviso legal</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="politica-de-privacidad.php">Privacidad</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="politica-de-cookies.php">Cookies</a>
+                </p>
+                
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Diseñado por Gema Jiménez</p>
+            </div>
+        </div>
+    </div>
+    <!-- Fin pie -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+</body>
+
+</html>

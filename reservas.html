@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hotel Mitológico</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/hotel.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Barra superior -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>info@hmitologico.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+034 918 500 001</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin barra superior-->
+
+
+    <!-- Barra navegacion -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-4" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">Hotel </span>Mitológico</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="entorno.html" class="nav-item nav-link">Entorno</a>
+                        <a href="habitaciones.html" class="nav-item nav-link">Habitaciones</a>
+                        <a href="servicios.html" class="nav-item nav-link">Servicios</a>
+                        <a href="interes.html" class="nav-item nav-link">Qué ver?</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacta</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- fin Barra navegacion-->
+    <!-- Header Start -->
+    <div class="container-fluid page-header bg-primary">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase mt-5">Reserva</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">condiciones</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">confirmación</p>
+                </div>
+                <div class="card-header bg-light  mb-4 justify-content-start" style=" width: 80%">
+                    <h6 class="text-danger ">La reserva queda confirmada mediante envio de mail con datos reserva.</h6>
+                    <h6 class="text-danger">El importe a abonar a la llegada al alojamiento debe efectuarse durante tu
+                        estancia en el hotel.</h6>
+                    <h6 class="text-danger">Atención: El pago se realizará en la moneda del hotel: EUR</h6>
+                    <h6 class="text-danger">Horarios</h6>
+                    <p class="text-danger">Hora Entrada | Check-In</p>
+                    <p class="text-danger">A partir de las 15:00</p>
+                    <p class="text-danger">Hora Salida | Check-Out</p>
+                    <p class="text-danger">Hasta las 12:00</p>
+                    <p class="text-danger">Política de Cancelación, términos y Condiciones en el desglose de la reserva
+                        enviado a su email.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reserva inicio datos enviador -->
+    <div class="container-fluid flex-column col-lg-8 mt-2  shadow">
+        <h1 class="card-header  m-0 text-center mt-2 text-primary">datos Reserva</h1>
+        <div class="card-body rounded-bottom bg-white">
+            <div class="reserv-form bg-white py-5">
+                <form id="reserva1" name="formulario1">
+                    <div class="form-group">
+                        <label for="entrada">Fecha entrada</label>
+                        <div class="date">
+                            <input type="date" id="entrada" name="entrada" class="form-control p-4"
+                                placeholder="Fecha de entrada" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="salida">Fecha salida</label>
+                        <div class="date">
+                            <input type="date" id="salida" name="salida" class="form-control p-4 datetimepicker-input"
+                                placeholder="Fecha de salida" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="habitacion">Tipo Habitacion</label>
+                        <select id="tipo" class="custom-select px-4" style="height: 47px;">
+                            <option value="">Habitacion</option>
+                            <option value="1">Habitación estándar-vista montaña</option>
+                            <option value="2">Habitación estándar-vista mar</option>
+                            <option value="3">Habitación doble-vista montaña</option>
+                            <option value="4">Habitación estándar-vista mar</option>
+                            <option value="5">Suite con terraza</option>
+                            <option value="6">Suite estándar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="personas">Nº de personas</label>
+                        <div class="number" data-target-input="nearest">
+                            <input type="number" id="personas" name="personas"
+                                class="form-control p-4 datetimepicker-input" placeholder="Nº personas" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- datos para envio reserva -->
+    <div class="container-fluid">
+        <div class="container py-5">
+            <div class="text-center mb-3 pb-3">
+                <div class="card-header bg-primary text-center m-18">
+                    <h1 class="text-white m-0">Datos para envio Reserva</h1>
+                </div>
+                <h6 class="text-primary text-uppercase mt-4" style="letter-spacing: 5px;">confirmada</h6>
+                <h1>Contacta</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form bg-white" style="padding: 30px;">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Tu Nombre"
+                                        required="required"
+                                        data-validation-required-message="Por favor introduce tu Nombre" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="apellidos" placeholder="Apellidos"
+                                        required="required"
+                                        data-validation-required-message="Por favor introduce tus Apellidos" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control p-4" id="email" placeholder="Tu Email"
+                                    required="required"
+                                    data-validation-required-message="Por favor introduce tu email" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="tel" class="form-control p-4" id="subject" placeholder="Telefono"
+                                    required="required"
+                                    data-validation-required-message="Por favor introduce tu Telefono" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="observacion"
+                                    placeholder="Observacion"
+                                    data-validation-required-message="Por favor introduce Observaciones"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary py-3 px-4" type="submit">Solicitar
+                                    Reserva</button>
+                                <button class="btn btn-primary py-3 px-4" type="reset">Borrar
+                                    Formulario</button>
+                            </div>
+                        </form>
+                    </div>
+                    <p>Finalidad: Realizar la verificacion de disponibilidad antes de envio mail.</p>
+                    <p>En email se envian datos disponibilidad u opción disponibles, junto con forma de confirmacion y
+                        condiciones</p>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="acepto" required>Acepto la <a
+                                href="politica-de-privacidad.html">política de protección de
+                                privacidad</a><br>
+
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- reserva fin-->
+
+    <!-- Pie -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-6 mb-5">
+                <div class="row">
+                    <img class="fa mr-4" src="img/logo.png" width="100" height="100" alt="Logo Hotel Mitológico Footer">
+                    <h1 class="text-primary mt-3"><span class="text-white">Hotel </span>Mitológico</h1>
+                </div>
+                <div class="row">
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Calle, Asturias, España</p>
+                    <p class="text-body px-3">|</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+034 918 500 001</p>
+                    <p class="text-body px-3">|</p>
+                    <p><i class="fa fa-envelope"></i>info@hmitologico.com</p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="row">
+                    <h6 class="text-white text-uppercase mt-4 mb-3 mr-4" style="letter-spacing: 12px;">Siguenos...</h6>
+                    <div class="d-flex justify-content-start ml-auto">
+                        <a class="btn btn-outline-primary btn-square mr-2 mt-2" href="#"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2 mt-2" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2 mt-2" href="#"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary btn-square mt-2" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <h6 class="text-white text-uppercase mt-4" style="letter-spacing: 5px;"> Suscríbete a nuestra newsletter
+                </h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light mr-2" placeholder="Tu Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3">Inscribete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights
+                    Reserved.</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="aviso-legal.php" target="_blank">Aviso legal</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="politica-de-privacidad.php" target="_blank">Privacidad</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="politica-de-cookies.php" target="_blank">Cookies</a>
+                </p>
+
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Diseñado por Gema Jiménez</p>
+            </div>
+        </div>
+    </div>
+    <!-- Fin pie -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+</body>
+
+</html>
